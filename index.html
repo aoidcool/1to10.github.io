@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>数字展示</title>
+	<style>
+		body {
+			background-color: #ececec;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr); /* 每行显示5个数字 */
+			grid-gap: 20px; /* 数字之间的间距 */
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			padding: 20px;
+			box-sizing: border-box;
+			font-family: '微软雅黑', sans-serif;
+			font-size: clamp(10px, 20vw, 300px); /* 使用 clamp 函数设置字体大小的范围 */
+			font-weight: bold;
+			color: #8bc34a; /* 将字体颜色设置为浅绿色 */
+		}
+		.container div {
+			text-align: center;
+			background-color: #ffffff;
+			padding: 10px;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 使用 text-shadow 替代 box-shadow */
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+	</div>
+</body>
+</html>
